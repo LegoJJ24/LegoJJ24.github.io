@@ -9,7 +9,7 @@
 
   <header>
       <h1> Muddy Buddies aka Puppy Chow</h1>
-      <img src="Muddy-Buddies.jpg">
+      <img src="Muddy-Buddies.jpg" alt="A bowl of muddy buddies snack mix">
       <p> A very easy and quiet delicious snack to make.</p>
   </header>
 
@@ -27,7 +27,7 @@
             </section>
 
             <section>
-              <h2>Directons</h2>
+              <h2>Directions</h2>
               <ol>
                   <li>Into large bowl, measure cereal; set aside.</li>
                   <li>In 1-quart microwavable bowl, microwave chocolate chips, peanut butter and butter uncovered on High 1 minute; stir. Microwave about 30 seconds longer or until mixture can be stirred smooth. Stir in vanilla. Pour mixture over cereal, stirring until evenly coated. Pour into 2-gallon resealable food-storage plastic bag.</li>
@@ -37,7 +37,7 @@
         </main>
 
         <footer>
-            <p>Photo by <a href=https://tastesbetterfromscratch.com/muddy-buddies>Lauren Allen</a>
+            <p>Photo by <a href="https://tastesbetterfromscratch.com/muddy-buddies">Lauren Allen</a></p>
         </footer>
 
 </body>
