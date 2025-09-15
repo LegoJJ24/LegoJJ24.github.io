@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content=width=device-width, intial-scale=1.0">
-      <title> HTML Semantic Tags</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Tags</title>
 </head>
 <body>
 
 <section>
-      <h1> What is the difference between non-semantic and semantic tags in HTML? </h1>
-      <ul>
-            <li> Semantic tags tell the browser and the developer what kind of content they contain. For example, the "<nav>" tag clearly indicates navigation links, and the "<article>" tag indicates a self-contained piece of content. </li>
-            <li> Non-semantic tags like "<div>" and "<span>" are generic containers. They don't provide any context about what's inside them; they are used simply to group elements for styling or scripting purposes. </li>
+    <h1>What is the difference between non-semantic and semantic tags in HTML?</h1>
+    <ul>
+        <li>Semantic tags tell the browser and the developer what kind of content they contain. For example, the "<nav>" tag clearly indicates navigation links, and the "<article>" tag indicates a self-contained piece of content.</li>
+        <li>Non-semantic tags like "<div>" and "<span>" are generic containers. They don't provide any context about what's inside them; they are used simply to group elements for styling or scripting purposes.</li>
+    </ul>
 </section>
 
 <section>
-      <h2> What are two (or more) benefits of using semantic tags? </h2>
-            <ol>
-             <li> Improved Accessibility: Semantic tags create a more structured and understandable document for assistive technologies like screen readers. For instance, a screen reader can use tags like <main> and <nav> to help users with visual impairments quickly navigate to the main content or the navigation menu, bypassing repetitive header information. </li>
-             <li> Better Search Engine Optimization: Search engines like Google analyze the HTML structure to understand the content and hierarchy of a webpage. Using semantic tags such as <header>, <h1>, and <article> helps search engine crawlers accurately index your content, which can lead to better rankings in search results </;i>
-             <li> Enhanced Code Readability and Maintenance: For developers, semantic HTML is much easier to read and maintain. When you see a <footer> tag, you immediately know its purpose. This clarity makes collaboration easier and simplifies the process of updating or debugging the code later on, as you don't have to guess the function of endless <div> elements. </li>
-            </ol>
+    <h2>What are two (or more) benefits of using semantic tags?</h2>
+    <ol>
+        <li>Improved Accessibility: Semantic tags create a more structured and understandable document for assistive technologies like screen readers. For instance, a screen reader can use tags like <main> and <nav> to help users with visual impairments quickly navigate to the main content or the navigation menu, bypassing repetitive header information.</li>
+        <li>Better Search Engine Optimization: Search engines like Google analyze the HTML structure to understand the content and hierarchy of a webpage. Using semantic tags such as <header>, <h1>, and <article> helps search engine crawlers accurately index your content, which can lead to better rankings in search results.</li>
+        <li>Enhanced Code Readability and Maintenance: For developers, semantic HTML is much easier to read and maintain. When you see a <footer> tag, you immediately know its purpose. This clarity makes collaboration easier and simplifies the process of updating or debugging the code later on, as you don't have to guess the function of endless <div> elements.</li>
+    </ol>
 </section>
+
 </body>
+</html>
