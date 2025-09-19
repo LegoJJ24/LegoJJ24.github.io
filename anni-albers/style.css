@@ -5,27 +5,27 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  max-width: 900px;      /* keep layout narrow like a book */
-  margin: auto;          /* center on screen */
+  max-width: 900px;      
+  margin: auto;          
   padding: 2rem;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6-column grid */
+  grid-template-columns: repeat(6, 1fr); 
   gap: 1rem;
 }
 
 .grid-container > * {
-  grid-column: 2 / span 4; /* center text inside grid */
+  grid-column: 2 / span 4; 
   margin-bottom: 1rem;
 }
 
 .callout {
   font-size: 1.4rem;
   font-style: italic;
-  text-align: right;       /* align quote text to the right */
-  grid-column: 4 / span 3; /* move quote to the right side */
+  text-align: right;      
+  grid-column: 4 / span 3; 
   margin: 2rem 0;
 }
 
@@ -35,16 +35,16 @@ body {
 }
 
 #secondLayout .grid-container > * {
-  flex: 0 0 66.66%; /* keep text narrower in flex mode */
-  margin: 0 auto 1rem auto; /* center text */
+  flex: 0 0 66.66%; 
+  margin: 0 auto 1rem auto; 
 }
 
 #secondLayout .callout {
-  flex: 0 0 66.66%;   /* quote matches text width */
+  flex: 0 0 66.66%;  
   margin: 2rem auto;
   font-size: 1.4rem;
   font-style: italic;
-  text-align: right;  /* align to right like in screenshot */
+  text-align: right; 
 }
 
 .author {
