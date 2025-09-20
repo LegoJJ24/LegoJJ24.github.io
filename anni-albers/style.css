@@ -1,34 +1,47 @@
 body {
-  font-family: 'Times New Roman', serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #111;
   background-color: white;
-  color: black;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  max-width: 700px;      /* narrower like the book-style layout */
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
   margin: auto;
-  padding: 2rem;
 }
 
-.grid-container {
-  display: block; /* single column flow */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.grid-container > * {
-  margin-bottom: 1rem;
-}
-
-.callout {
-  font-size: 1.4rem;
+.subtitle {
+  font-size: 14px;
   font-style: italic;
-  text-align: right;      
-  max-width: 60%;        /* narrower width */
-  margin: 2rem 0 2rem auto; /* pushes it to the right */
-  line-height: 1.4;
+  color: #444;
+  margin-bottom: 40px;
 }
 
-.author {
-  margin-top: 3rem;
-  text-align: left;
+p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.quote-container {
+  float: right;
+  width: 300px;
+  margin: 20px;
+  padding-left: 20px;
   font-style: italic;
+  color: #2e5c8a;
+  font-size: 16px;
+  border-left: 4px solid #cce0f2;
+}
+
+blockquote {
+  margin: 0;
 }
