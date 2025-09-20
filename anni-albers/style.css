@@ -5,19 +5,16 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  max-width: 900px;      
-  margin: auto;          
+  max-width: 700px;      /* narrower like the book-style layout */
+  margin: auto;
   padding: 2rem;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); 
-  gap: 1rem;
+  display: block; /* single column flow */
 }
 
 .grid-container > * {
-  grid-column: 2 / span 4; 
   margin-bottom: 1rem;
 }
 
@@ -25,26 +22,9 @@ body {
   font-size: 1.4rem;
   font-style: italic;
   text-align: right;      
-  grid-column: 4 / span 3; 
-  margin: 2rem 0;
-}
-
-#secondLayout .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#secondLayout .grid-container > * {
-  flex: 0 0 66.66%; 
-  margin: 0 auto 1rem auto; 
-}
-
-#secondLayout .callout {
-  flex: 0 0 66.66%;  
-  margin: 2rem auto;
-  font-size: 1.4rem;
-  font-style: italic;
-  text-align: right; 
+  max-width: 60%;        /* narrower width */
+  margin: 2rem 0 2rem auto; /* pushes it to the right */
+  line-height: 1.4;
 }
 
 .author {
