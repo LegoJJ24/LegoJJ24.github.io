@@ -5,7 +5,10 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
-  @media (min-width: 768px) {
+}
+
+
+@media (min-width: 768px) {
   body {
     font-size: 18px;
   }
@@ -13,10 +16,11 @@ body {
 
 h1 {
     color: #2c5e3f;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
+}
 
 img {
-    max-width: 100%;  
+    max-width: 100%;   
     height: auto; 
     display: block;
     margin: 20px 0;
