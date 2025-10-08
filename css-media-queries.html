@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+  </head>
+<body>
 
+    <section>
+        <h1>How does a CSS media query work, and why is it useful?</h1>
+        <p>A CSS media query is a method by which a CSS style can be activated only if the specified properties of the device or browser window are met. In other words, it is an "if-then" statement for the presentation of your website: if the screen has a particular size, then the specified styles are to be applied. They are the basis of responsive web design, which is a way of designing a website that can function and be visually pleasing on any device, a huge desktop monitor, a tablet, or a small smartphone. Instead of having a different website for mobile and desktop, you employ media queries to make the layout of a single site compatible with any screen</p>
+    </section>
+
+    <section>
+        <h2>What "media features" are supported by media queries — such as "orientation" or "max-width" — and what do they do? Pick any 4 to explain.</h2>
+        <ul>
+            <li>Max-width: The feature allows the checking of the browser's viewport (the part of the page the user is currently seeing) if it is less than or equal to a certain width. It is mainly used to set the styles of smaller screens. As an illustration, the three-column layout that you have on a desktop can be changed to a single column of stacked columns on a phone using max-width. </li>
+            <li>Orientation: The feature helps to identify the device position whether it is in portrait mode (taller than it is wide) or in landscape mode (wider than it is tall). The information about the user holding the device is quite beneficial in the case of phones and tablets as you can design the layout in such a way that it adapts to the way the user is holding their device.</li>
+            <li>Hover: The feature determines if the user's primary input device is capable to hover over elements. The hovering of a mouse on a desktop is possible whereas a finger on a touchscreen cannot. The feature allows different creation of experiences for touch and non-touch devices. As an example, the buttons that have been hidden on a desktop and can only be seen on hover can be made visible at all times on a mobile device. </li>
+            <li>Prefers-Color-Scheme: The feature gives an answer to the question whether the user prefers a light or a dark color theme, and checks the user's operating system or browser settings. This is one way of creating the "dark mode" feature that automatically takes into account the user's system-wide preference, which is perfect for accessibility and user comfort. </li>  
+    </section>
+    
+</body>
