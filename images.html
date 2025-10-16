@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
 
+    <section>
+        <h1>What are the differences between presenting an image using an HTML tag (like <img>) and presenting it as the background of an HTML element (using the CSS property background-image)? Think in terms of differences in code as well as differences in functionality and layout.</h1>
+        <p>The primary differences between using an HTML <strong>&lt;img&gt;</strong> tag and a CSS <strong>background-image</strong> property relate to semantics (meaning) and control.</p>
+        <ul>
+            <li><strong>Functionality & Semantics:</strong> An <strong>&lt;img&gt;</strong> tag is for content that is essential to the page's meaning, like a product photo or a diagram. It is considered part of the document's content, and assistive technologies like screen readers will announce it using its `alt` text. A <strong>background-image</strong> is purely decorative; it's part of the design and is ignored by screen readers, as it's not considered content.</li>
+            <li><strong>Code:</strong> The &lt;img&gt; tag is an HTML element written as <code>&lt;img src="path/to/image.jpg" alt="description"&gt;</code>. A background-image is a CSS property applied to an element, written as <code>div { background-image: url('path/to/image.jpg'); }</code>.</li>
+            <li><strong>Layout:</strong> An &lt;img&gt; tag is an element that occupies its own space in the document layout, pushing other elements around it. A background-image is applied to the background of an existing element and does not affect the layout or take up space on its own; it simply fills the padding and content area of the element it's applied to.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Besides background-image, what other CSS properties affect the display of background images? Describe at least two more CSS properties.</h1>
+        <p>Several other CSS properties are used to control background images. Here are two common ones:</p>
+        <ul>
+            <li><strong>background-repeat:</strong> This property controls whether and how a background image repeats. By default, an image will tile itself horizontally and vertically to fill the element. You can set it to <code>no-repeat</code> to show the image only once, <code>repeat-x</code> to repeat it only horizontally, or <code>repeat-y</code> to repeat it only vertically.</li>
+            <li><strong>background-size:</strong> This property defines the size of the background image. You can give it specific pixel values (e.g., <code>100px 50px</code>), or use keywords like <code>cover</code> (which scales the image to completely cover the element's area, potentially cropping the image) or <code>contain</code> (which scales the image to be as large as possible while still being fully visible within the element).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>In one sentence, how would you define the differences between dimensions and resolution in a bitmap image?</h1>
+        <p><strong>Dimensions</strong> refer to the total number of pixels that make up an image's width and height (e.g., 1920x1080 pixels), whereas <strong>resolution</strong> refers to the density of those pixels within a physical area, typically measured in pixels per inch (PPI). 🤔</p>
+    </section>
+    
+    <section>
+        <h1>What are the similarities and differences between these image file formats? Why are some better than others for specific uses? GIF, PNG, JPG/JPEG, WebP, SVG</h1>
+        <p>All these formats are used to display images on the web, but they differ greatly in compression, features, and best use cases.</p>
+        <ul>
+            <li><strong>JPG/JPEG (Joint Photographic Experts Group):</strong> This is a <strong>lossy</strong> format, meaning it discards some image data to create a much smaller file size. It excels at displaying photographs and complex images with millions of colors. It does not support transparency. <strong>Best for:</strong> Photos. 📸</li>
+            <li><strong>GIF (Graphics Interchange Format):</strong> This is a <strong>lossless</strong> format that is limited to a palette of only 256 colors. Its main advantages are its support for simple animations and basic on/off transparency (no semi-transparent pixels). <strong>Best for:</strong> Simple animations and logos with very few colors.</li>
+            <li><strong>PNG (Portable Network Graphics):</strong> This is a <strong>lossless</strong> format designed as a superior replacement for GIF. It supports millions of colors and offers advanced "alpha channel" transparency, which allows for varying levels of opacity. It keeps images with text or sharp lines very crisp. <strong>Best for:</strong> Logos, icons, and any graphic that requires transparency or perfect image fidelity.</li>
+            <li><strong>WebP:</strong> Developed by Google, this modern format can be either <strong>lossy or lossless</strong> and provides significantly smaller file sizes than JPG and PNG at comparable quality. It supports both transparency and animation. It's an excellent all-around format for the web. <strong>Best for:</strong> A modern, high-performance replacement for JPG, PNG, and GIF.</li>
+            <li><strong>SVG (Scalable Vector Graphics):</strong> Unlike the others, which are raster (pixel-based) formats, SVG is a <strong>vector</strong> format. It uses XML code to describe shapes, paths, and colors. This means it can be scaled to any size—from a tiny icon to a huge billboard—without any loss of quality. <strong>Best for:</strong> Logos, icons, and simple illustrations that need to be scalable and sharp on all displays. ✨</li>
+        </ul>
+    </section>
+
+</body>
+</html>
