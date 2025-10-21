@@ -54,3 +54,25 @@ li {
 .recipe-content {
     display: block; 
 }
+@media (min-width: 800px) {
+
+    .recipe-content {
+        display: flex; 
+        gap: 40px;    
+    }
+
+    .ingredients {
+        flex: 1; 
+        background-color: #fdf6f6;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .instructions {
+        flex: 2; 
+    }
+
+    header h1 {
+        font-size: 3.5em; 
+    }
+}
