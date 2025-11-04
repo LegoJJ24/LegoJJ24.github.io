@@ -1,37 +1,14 @@
-function toggleMenu() {
-    var menu = document.getElementById("main-menu");
-    menu.classList.toggle("show");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
 
-
-function toggleSubmenu(event) {
-   
-    if (event.target.parentElement.classList.contains('has-submenu')) {
-        event.preventDefault();
-        
-      
-        var submenu = event.target.nextElementSibling;
-        
-      
-        var menuButton = document.getElementById("menu-button");
-        var isMobile = getComputedStyle(menuButton).display !== "none";
-
-        if (isMobile) {
-            if (submenu) {
-                submenu.classList.toggle("show");
-            }
-        }
+    if (navToggle) {
+        navToggle.addEventListener('click', function() {
+            // Toggle the 'active' class on the menu
+            navMenu.classList.toggle('active');
+            
+            // Toggle the 'active' class on the hamburger button for the 'X'
+            navToggle.classList.toggle('active');
+        });
     }
-}
-
-
-var menuButton = document.getElementById("menu-button");
-if (menuButton) {
-    menuButton.addEventListener("click", toggleMenu);
-}
-
-
-var menuLinks = document.querySelectorAll("#main-menu li a");
-menuLinks.forEach(function(link) {
-    link.addEventListener("click", toggleSubmenu);
 });
