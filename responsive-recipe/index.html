@@ -3,72 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Recipe Site - Home</title>
+    <title>Muddy Buddies Recipe</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
-      <button id="menu-button">Menu</button>
-      <ul id="main-menu">
-        <li><a href="index.html">Home</a></li>
-        <li class="has-submenu">
-          <a href="#">My Recipes</a>
-          <ul class="submenu">
-            <li><a href="recipe1.html">Muddy Buddies</a></li>
-            <li><a href="recipe2.html">Chocolate Chip Cookies</a></li>
-            <li><a href="recipe3.html">Classic Brownies</a></li>
-          </ul>
-        </li>
-        <li class="has-submenu">
-          <a href="#">Favorite Recipe Sites</a>
-          <ul class="submenu">
-            <li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
-            <li><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></li>
-            <li><a href="https://www.bonappetit.com/" target="_blank">Bon Appétit</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
     <header>
-        <h1>Welcome to My Recipe Collection</h1>
+        <h1>Muddy Buddies (Puppy Chow)</h1>
     </header>
 
-    <main class="homepage">
-        <h2>Find Your New Favorite Treat</h2>
-        <p>Welcome to my personal collection of favorite recipes. Here you'll find simple, delicious, and fun treats to make at home.</p>
-        
-     
-        <img src="https://placehold.co/1200x600/f0e4d0/444?text=Delicious+Treats" alt="A collection of delicious baked goods">
+    <main class="recipe-container">
 
-        <h3>Featured Recipes</h3>
-        
-       
-        <div class="recipe-links">
-            <div class="recipe-link-card">
-                <h4><a href="recipe1.html">Muddy Buddies</a></h4>
-                <p>The perfect, easy-to-make party snack. A classic for a reason!</p>
+        <section class="recipe-intro">
+            <img src="Muddy-Buddies.jpg" alt="A top-down view of Muddy Buddies in a square glass dish.">
+            
+            <div class="description">
+                <h2>Description</h2>
+                <p>The BEST Muddy Buddies recipe! Also known as "puppy chow", this classic treat is made with chocolate, peanut butter, Chex cereal, and powdered sugar. It’s a crowd-pleasing, no-bake snack that’s ready in 15 minutes!</p>
             </div>
-            <div class="recipe-link-card">
-                <h4><a href="recipe2.html">Chocolate Chip Cookies</a></h4>
-                <p>The ultimate classic cookie. Soft, chewy, and loaded with chocolate.</p>
+        </section>
+
+        <section class="recipe-details">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>9 cups Rice Chex cereal</li>
+                    <li>1 cup semi-sweet chocolate chips</li>
+                    <li>1/2 cup peanut butter</li>
+                    <li>1/4 cup unsalted butter</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>1 1/2 cups powdered sugar</li>
+                </ul>
             </div>
-            <div class="recipe-link-card">
-                <h4><a href="recipe3.html">Classic Brownies</a></h4>
-                <p>Fudgy, rich, and decadent brownies that are surprisingly simple.</p>
+
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Add Chex cereal to a large bowl.</li>
+                    <li>Add chocolate chips, peanut butter, and butter to a medium microwave-safe bowl.</li>
+                    <li>Microwave for 1 minute. Stir well. Continue to microwave in 30-second increments, stirring between, until smooth.</li>
+                    <li>Stir in vanilla extract.</li>
+                    <li>Pour chocolate mixture over the Chex cereal and stir gently until all the cereal is evenly coated.</li>
+                    <li>Pour half of the cereal mixture into a large Ziplock bag. Add half of the powdered sugar (about 3/4 cup). Seal the bag and shake well to coat.</li>
+                    <li>Pour onto a large baking sheet lined with parchment paper.</li>
+                    <li>Repeat with the remaining cereal and powdered sugar.</li>
+                    <li>Allow to cool completely before storing in an airtight container.</li>
+                </ol>
             </div>
-        </div>
+        </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2024 My Recipe Site. Project for LIS 500.</p>
+        <p>Original recipe from <a href="https://tastesbetterfromscratch.com/muddy-buddies" target="_blank" rel="noopener noreferrer">Tastes Better From Scratch</a>.</p>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
