@@ -1,0 +1,311 @@
+/* ======== BASIC & RECIPE STYLES ======== */
+
+/* Basic mobile-first styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    /* Add padding to top to account for fixed nav */
+    padding-top: 60px; 
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* This is the key for making images fit perfectly! */
+img {
+    max-width: 100%; /* Never wider than its container */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Remove bottom space */
+    border-radius: 8px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 400px; /* Give it a fixed height */
+    object-fit: cover; /* This makes the image cover the area without stretching */
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+ul, ol {
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ======== HOMEPAGE TILE STYLES ======== */
+.homepage-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.homepage-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.recipe-tiles {
+    display: grid;
+    grid-template-columns: 1fr; /* One column on mobile */
+    gap: 20px;
+}
+
+.tile {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden; /* Ensures image corners are rounded */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.tile img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /* Only round top corners */
+}
+
+.tile h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Responsive grid for tiles on larger screens */
+@media (min-width: 768px) {
+    .recipe-tiles {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on tablet/desktop */
+    }
+}
+
+
+/* ======== RESPONSIVE NAVIGATION MENU (Lesson 36) ======== */
+/* This is the CSS for the navigation menu */
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed; /* Make it stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+/* Dropdown styles */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-width: 200px;
+    flex-direction: column; /* Stack items vertically */
+    gap: 0;
+    padding: 10px 0;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block; /* Show on hover */
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; /* Fix padding issue */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f8f8;
+}
+
+
+/* Mobile Menu Toggle (Hamburger) */
+.nav-toggle {
+    display: none; /* Hide on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+}
+
+.hamburger::before {
+    top: -7px;
+}
+
+.hamburger::after {
+    bottom: -7px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    .nav-menu.active {
+        display: block; 
+    }
+
+    .nav-menu ul {
+        flex-direction: column; 
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 15px 20px;
+    }
+
+   
+    .dropdown-menu {
+        position: static; 
+        display: block; 
+        box-shadow: none;
+        border-radius: 0;
+        min-width: 100%;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    
+    .dropdown-menu a {
+        padding: 15px 40px; 
+        color: #444;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+        display: block; 
+    }
+    
+    
+    .nav-toggle.active .hamburger {
+        background-color: transparent;
+    }
+    
+    .nav-toggle.active .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    
+    .nav-toggle.active .hamburger::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+}
