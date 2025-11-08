@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odyssey - A Long Story</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <main data-scroll-container>
+        
+        <section class="step" data-scroll-section>
+            <h1>The Odyssey</h1>
+            <p>A Long-Scrolling Story</p>
+        </section>
+
+        <section class="step" data-scroll-section>
+            <h2>The Cicones & Lotus Eaters</h2>
+            <p>Odysseus and his men begin their perilous journey home...</p>
+        </section>
+
+        <section class="step" data-scroll-section>
+            <h2>The Cyclops</h2>
+            <p>The encounter with Polyphemus, who traps them in his cave.</p>
+        </section>
+
+        <section class="step" data-scroll-section>
+            <h2>Circe's Island</h2>
+            <p>The enchantress turns his men into swine.</p>
+        </section>
+
+        <section class="step" data-scroll-section>
+            <h2>The Sirens</h2>
+            <p>He must resist the deadly song of the Sirens.</p>
+        </section>
+
+        <section class="step" data-scroll-section>
+            <h2>Home at Last</h2>
+            <p>After 20 years, Odysseus returns to Ithaca.</p>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
+
+</body>
+</html>
