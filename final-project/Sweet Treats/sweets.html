@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Treats - My Recipe Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sweet Treats - The Baker's Ledger</title>
+    
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+
+<body class="sweet-theme">
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Recipes</a>
+            <a href="../index.html" class="nav-logo">The Baker's Ledger</a>
+            
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
+            
             <div class="nav-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="savory.html">Savory Bakes</a></li>
-                    <li><a href="sweets.html">Sweet Treats</a></li>
-                    <li><a href="breakfast.html">Breakfast</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../savory.html">Savory Bakes</a></li>
+                    
+                    <li><a href="sweets.html" class="active">Sweet Treats</a></li>
+                    
+                    <li><a href="../breakfast.html">Breakfast</a></li>
+                    <li><a href="../about.html">About</a></li>
                 </ul>
             </div>
         </div>
@@ -33,21 +39,31 @@
         </header>
         
         <div class="recipe-tiles">
-            <a href="recipe1.html" class="tile">
-                <img src="Chocolate-Brownies24-5.jpg" alt="A stack of chocolate brownies">
+            <a href="../recipe1.html" class="tile">
+                <img src="../Chocolate-Brownies24-5.jpg" alt="A stack of chocolate brownies">
                 <h3>Chocolate Brownies</h3>
             </a>
-            <a href="recipe2.html" class="tile">
-                <img src="Muddy-Buddies-4.jpg" alt="A bowl of muddy buddies snack mix">
+
+            <a href="../recipe2.html" class="tile">
+                <img src="../Muddy-Buddies-4.jpg" alt="A bowl of muddy buddies snack mix">
                 <h3>Muddy Buddies</h3>
             </a>
-            <a href="recipe3.html" class="tile">
-                <img src="Chocolate-Chip-Cookies-2.jpg" alt="A plate of chocolate chip cookies">
+
+            <a href="../recipe3.html" class="tile">
+                <img src="../Chocolate-Chip-Cookies-2.jpg" alt="A plate of chocolate chip cookies">
                 <h3>Chocolate Chip Cookies</h3>
             </a>
         </div>
     </main>
 
-    <script src="scripts.js"></script>
+    <footer class="site-footer">
+        <p>&copy; 2025 The Baker’s Ledger. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
 </body>
 </html>
