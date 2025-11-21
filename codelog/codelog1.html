@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code References</title>
+    <style>
+        /* Simple CSS to make the page readable and satisfy the textarea requirement */
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+        }
+        textarea {
+            display: block; /* As requested in the assignment */
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Code References</h1>
+
+    <h2>1. What did you look up?</h2>
+    <p>
+        For this assignment, I researched the CSS property <code>border-radius</code>. I chose this property because while it seems simple—it just rounds the corners of an element—it actually has complex syntax options for creating elliptical shapes and asymmetrical corners that I wanted to understand better.
+    </p>
+
+    <h2>2. What sites did you consult?</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">MDN Web Docs (Mozilla)</a></li>
+        <li><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp" target="_blank">W3Schools</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/b/border-radius/" target="_blank">CSS-Tricks</a></li>
+        <li><a href="https://www.geeksforgeeks.org/css-border-radius-property/" target="_blank">GeeksforGeeks</a></li>
+    </ul>
+
+    <h2>3. What are the differences in the information presented?</h2>
+    <p>
+        The information varied significantly in depth. <strong>W3Schools</strong> focused entirely on the basics, providing a "Try it Yourself" editor that lets you see the code in action immediately. It was very beginner-friendly but lacked deep technical details. 
+    </p>
+    <p>
+        In contrast, <strong>MDN Web Docs</strong> provided a highly technical breakdown of the syntax, including formal grammar and browser compatibility charts. <strong>CSS-Tricks</strong> offered the most visual approach; they used diagrams to explain how the "slash" syntax works to create elliptical corners, which the other sites barely touched on. <strong>GeeksforGeeks</strong> felt similar to W3Schools but included more written definitions rather than interactive tools.
+    </p>
+
+    <h2>4. What features should a code reference page offer?</h2>
+    <p>
+        I believe a great code reference page needs three specific features. First, it must have a copy-pasteable syntax block at the very top. Second, it needs a "playground" or live preview where I can mess up the code without breaking my own site. Finally, it needs a browser support table so I know if the code will work on older devices.
+    </p>
+
+    <h2>5. Reflection on the Resources</h2>
+    <p>
+        <strong>CSS-Tricks</strong> stood out as the best resource for learning <em>how</em> the property works visually. However, <strong>MDN</strong> remains the best for verifying technical accuracy. I found GeeksforGeeks the least helpful as the layout was cluttered with ads and the examples were less distinct than W3Schools.
+    </p>
+
+    <h2>Code Example</h2>
+    <p>
+        Here is an example of how to use the property, displayed in a text area:
+    </p>
+
+    <textarea readonly>
+.card {
+    background-color: #333;
+    color: white;
+    /* This creates a 10px rounded corner on all sides */
+    border-radius: 10px;
+}
+    </textarea>
+
+</body>
+</html>
